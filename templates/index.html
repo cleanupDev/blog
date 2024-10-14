@@ -12,5 +12,16 @@
     <div hx-get="/test-htmx" hx-swap="outerHTML">
         <p>Click here for to load content with HTMX.</p>
     </div>
+
+    <div>
+        <h2>Posts</h2>
+        <ul>
+            {{range .Posts}}
+                <li>
+                    <a href="/post/{{.ID}}">{{.Title}}</a>
+                </li>
+            {{end}}
+        </ul>
+    </div>
 </body>
 </html>
