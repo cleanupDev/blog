@@ -34,7 +34,7 @@ func main() {
 	})
 	e.GET("/posts", postsHandler)
 
-	e.Start(":8042")
+	e.Start(":3000")
 }
 
 func homeHandler(c echo.Context) error {

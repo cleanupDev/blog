@@ -25,3 +25,6 @@ go.work.sum
 .env
 .air.toml
 tmp/
+
+*.idea
+.DS_Store
