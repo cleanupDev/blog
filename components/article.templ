@@ -1,12 +1,9 @@
-package pages
+package components
 
-import (
-	"github.com/cleanupDev/blog/internal"
-	"github.com/cleanupDev/blog/templates"
-)
+import "github.com/cleanupDev/blog/internal"
 
 templ ArticlePage(article internal.Article) {
-	@templates.Layout(article.Title) {
+	@Layout(article.Title) {
 		<div class="container">
 			<h1>{ article.Title }</h1>
 			<p>{ article.Content }</p>

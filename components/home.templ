@@ -1,12 +1,9 @@
-package pages
+package components
 
-import (
-	"github.com/cleanupDev/blog/internal"
-	"github.com/cleanupDev/blog/templates"
-)
+import "github.com/cleanupDev/blog/internal"
 
 templ HomePage(articles []internal.Article) {
-	@templates.Layout("Blog Home") {
+	@Layout("Blog Home") {
 		<div class="container">
 			<h1>Welcome to my blog</h1>
 			for _, article := range articles {
