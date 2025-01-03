@@ -1,0 +1,12 @@
+LICENCE
+Dockerfile
+README.md
+Makefile
+tmp/
+blog
+*_templ.go
+.idea
+.DS_Store
+.env
+.air.toml
+.gitignore

@@ -18,9 +18,7 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /app
 
 # Copy the binary and necessary files
-COPY --from=build /app/main .
-COPY --from=build /app/templates ./templates
-COPY --from=build /app/static ./static
+COPY --from=build /app .
 
 EXPOSE 3000
 
